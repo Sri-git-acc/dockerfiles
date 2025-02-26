@@ -1,5 +1,5 @@
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-9}
 ENV project="ansh" \
     environment="dev" \
     Docker="True"
