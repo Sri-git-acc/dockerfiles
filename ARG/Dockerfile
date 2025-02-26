@@ -4,6 +4,6 @@ ENV project="ansh" \
     Docker="True"
 RUN useradd ansh
 ARG USERNAME=Sri
-RUN echo"Hello ${USERNAME}" > hello.txt
+RUN echo"Hello ${USERNAME}" > /tmp/hello.txt
 USER ansh
 CMD ["sleep", "100"]
